@@ -35,6 +35,8 @@ def retrieve_chunks(collection, model, question, top_k=3, threshold=0.15):
 
     chunks = results["documents"][0]
     distances = results["distances"][0]
+    print(f"Chunks retrieved: {chunks}")
+    print(f"Distances retrieved: {distances}")
 
     # ChromaDB returns distance (lower = more similar)
     # Convert distance to similarity score (0 to 1)
