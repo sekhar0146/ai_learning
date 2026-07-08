@@ -83,7 +83,7 @@ def main():
     # print(text)
 
     # Chunk the text into smaller pieces
-    chunks = chunk_document(text, chunk_size=200, overlap=50)
+    chunks = chunk_document(text, chunk_size=500, overlap=100)
     #print(chunks)
     # for i, chunk in enumerate(chunks):
     #     print(f"Chunk {i+1}:\n{chunk}\n{'-'*50}\n")
