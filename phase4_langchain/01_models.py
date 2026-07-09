@@ -12,6 +12,8 @@ def basic_call(llm):
     """
     response = llm.invoke("What is a data pipeline in one sentence?")
     print("Basic call:")
+    print(response)
+    print("")
     print(response.content)
     print()
 
